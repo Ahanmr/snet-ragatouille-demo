@@ -7,7 +7,7 @@ Set the following environment variables:
 
 ```bash
 export SNET_PRIVATE_KEY="your_private_key_here"
-export ETH_RPC_ENDPOINT="your_ethereum_endpoint"
+export ETH_RPC_ENDPOINT="https://mainnet.infura.io/v3/09027f4a13e841d48dbfefc67e7685d5"
 export PORT=5000  # optional, defaults to 5000
 ```
 ## Running the Service
