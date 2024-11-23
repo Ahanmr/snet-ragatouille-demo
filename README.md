@@ -10,8 +10,18 @@ export SNET_PRIVATE_KEY="your_private_key_here"
 export ETH_RPC_ENDPOINT="https://mainnet.infura.io/v3/09027f4a13e841d48dbfefc67e7685d5"
 export PORT=5000  # optional, defaults to 5000
 ```
-## Running the Service
 
+## Installation
+
+Install required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Components
+
+### 1. REST API Server
 Start the REST API server:
 
 ```bash
@@ -19,6 +29,25 @@ python run.py
 ```
 
 The server will start on http://localhost:5000 (or your configured PORT).
+
+### 2. Streamlit Demo
+Start the Streamlit demo application:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+The demo will be available at http://localhost:8501
+
+## Data Generator
+
+The data generator uses a GAN-based approach to create synthetic prediction data. You can customize:
+
+- Number of classes
+- Number of samples
+- Noise level (0-1)
+- Bias strength (0-1)
+- Class imbalance
 
 ## API Endpoints
 
