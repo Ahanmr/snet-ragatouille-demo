@@ -43,11 +43,34 @@ The demo will be available at http://localhost:8501
 
 The data generator uses a GAN-based approach to create synthetic prediction data. You can customize:
 
-- Number of classes
-- Number of samples
-- Noise level (0-1)
-- Bias strength (0-1)
-- Class imbalance
+- Number of classes (2-10): The number of possible outcomes for each prediction
+- Number of samples (100-10000): How many prediction instances to generate
+- Noise level (0-1): Controls randomness in predictions
+  - 0: Deterministic predictions
+  - 1: Highly random predictions
+- Bias strength (0-1): Controls systematic bias in predictions
+  - 0: No systematic bias
+  - 1: Strong systematic bias towards certain classes
+- Class imbalance: Optional custom probabilities for each class
+  - Default: Equal probability for all classes
+  - Custom: Set specific probabilities (must sum to 1)
+
+### Effects of Parameters
+
+1. **Noise Level**
+   - Low noise: More confident and consistent predictions
+   - High noise: More uncertain and varied predictions
+   - Affects the 'Decisiveness' metric
+
+2. **Bias Strength**
+   - Low bias: More balanced predictions across classes
+   - High bias: Systematic preference for certain classes
+   - Affects the 'Robustness' metric
+
+3. **Class Imbalance**
+   - Balanced: Equal representation of all classes
+   - Imbalanced: Some classes appear more frequently
+   - Affects both 'Robustness' and 'Accuracy' metrics
 
 ## API Endpoints
 
