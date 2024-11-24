@@ -82,8 +82,8 @@ def assess_predictions():
         
         # Call the service
         result = service_client.call_rpc(
-            method_name="adr",
-            message_name="ADRInput",
+            rpc_name="adr",
+            message_class="InputString",
             s=input_string
         )
         
