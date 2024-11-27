@@ -7,7 +7,7 @@ Set the following environment variables:
 
 ```bash
 export SNET_PRIVATE_KEY="your_private_key_here"
-export ETH_RPC_ENDPOINT="https://mainnet.infura.io/v3/09027f4a13e841d48dbfefc67e7685d5"
+export ETH_RPC_ENDPOINT="https://mainnet.infura.io/v3/1c36b436da7645b6936ebf2e8156e6a7"
 export PORT=5000  # optional, defaults to 5000
 ```
 
@@ -34,10 +34,58 @@ The server will start on http://localhost:5000 (or your configured PORT).
 Start the Streamlit demo application:
 
 ```bash
-streamlit run streamlit_app.py
+streamlit run app.py
 ```
 
 The demo will be available at http://localhost:8501
+
+The demo offers two main data generation modes:
+
+#### A. General Synthetic Data
+Configure synthetic data generation with:
+
+- Number of classes (2-10)
+- Number of samples (100-10000)
+- Distribution type (Normal, Uniform, Beta, Gamma)
+- Noise level (0-1): Controls prediction randomness
+- Bias strength (0-1): Controls systematic bias
+- Optional train-test split with stratification
+- Optional class imbalance settings
+
+#### B. Climate Scenarios
+Specialized data generation for climate-related predictions:
+
+1. **Temperature Anomalies**
+   - Baseline temperature
+   - Warming rate
+   - Temperature variability
+   - Classes: Cold, Normal, Hot
+
+2. **Extreme Events**
+   - Base event rate
+   - Rate increase per year
+   - Classes: Normal, Extreme
+
+3. **Sea Level Rise**
+   - Rise rate (mm/year)
+   - Seasonal amplitude
+   - Local variability
+   - Classes: Low, Medium, High
+
+### Visualization Features
+
+The demo provides multiple visualization options:
+
+1. **Class Distribution**: Shows the distribution of true classes
+2. **Prediction Heatmap**: Visualizes probability distributions
+3. **Probability Distribution**: Box plots of prediction probabilities
+4. **Feature Correlations**: Correlation matrix of features
+5. **Decision Boundary**: 2D visualization of class boundaries
+
+### Data Export
+- View raw data in tabular format
+- Download generated datasets as CSV
+- Run risk assessment directly from the interface
 
 ## Data Generator
 
