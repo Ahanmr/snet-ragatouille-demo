@@ -1,4 +1,23 @@
-# snet-ragatouille-demo
+<div align="center">
+  <img src="logo.jpg" alt="RAGatouille Logo" width="200"/>
+
+  # RAGatouille Demo
+  ### Risk-Aware Synthetic Data Generation & Assessment
+
+  [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+  [![SingularityNET](https://img.shields.io/badge/SingularityNET-Hackathon-blue)](https://singularitynet.io/)
+
+  *A tool for generating and assessing synthetic prediction data with Photrek's risk assessment framework*
+
+  [Getting Started](#installation) •
+  [Documentation](#components) •
+  [Demo](#streamlit-demo) •
+  [API Reference](#api-endpoints)
+</div>
+
+---
+
+# Overview
 Submission to the SingularityNET's Photrek Risk Assessment Hackathon
 
 ## Environment Setup
