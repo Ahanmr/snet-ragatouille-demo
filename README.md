@@ -20,6 +20,9 @@
 # Overview
 Submission to the SingularityNET's Photrek Risk Assessment Hackathon
 
+[![Watch the video](https://img.youtube.com/vi/UOpWVUwq17s/maxresdefault.jpg)](https://youtu.be/UOpWVUwq17s?si=A5ZDvqNj-QSoKJt1)
+
+
 ## Environment Setup
 
 Set the following environment variables:
